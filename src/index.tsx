@@ -5,6 +5,7 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import theme from './common/theme/theme';
+import GlobalStyles from './common/styles/global';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
@@ -32,6 +33,7 @@ const router = (
 root.render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
+            <GlobalStyles />
             <Provider store={store}>{router}</Provider>
         </ThemeProvider>
     </React.StrictMode>
