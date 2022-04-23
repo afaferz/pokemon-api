@@ -6,7 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         outline:0;
         box-sizing:border-box;
-        font-family: 'Open Sans', sans-serif; 
+        font-family: 'Open Sans', sans-serif;
     }
     body {
         font-family: 
@@ -15,6 +15,7 @@ export default createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        margin: 0;
     }
     #root {
         margin: 0 auto;
